@@ -1,0 +1,49 @@
+<!DOCTYPE html lang='en'>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>u1efinal_trivial</title>
+        <script src="u1efinal_trivial.js"></script> //
+    </head>
+    <body>
+        <!-- Si has jugado alguna vez al trivial sabrás que, cuando un jugador consigue los 6 "quesitos", debe ir al centro del tablero y adivinar 
+        al menos 4 de las 6 preguntas que tiene una de las tarjetas escogida al azar.
+
+        Deberás realizar un programa que implemente esa última tarjeta de trivial de tal manera que:
+
+        1. Al jugador se le presentan 6 preguntas, previo nombre de la categoría (Geografía, Arte, Espectáculos, Historia, Ciencias y Deportes).
+        Estas preguntas se mostrarán continuamente hasta que el jugador responda a todas, hasta que gane o hasta que pierda.
+
+        2. El jugador elige una de las preguntas y escribe la respuesta. Si acierta se suma 1 punto al marcador.
+        Sino, no se suma ningún punto. En cualquier caso, la pregunta no vuelve a aparecer en la lista.
+
+        3. Cuando el jugador ha respondido 4 preguntas bien no hace falta que le preguntemos más porque habrá adivinado.
+        Si el jugador ha respondido 3 preguntas mal no hace falta que preguntemos más porque habrá perdido.
+
+        Crea el programa de la manera más eficiente posible, creando todas las funciones que sean necesarias y procurando no escribir código javascript en el fichero html.
+        Solo obtendrán el certificado de eficiencia aquellos Sandkills que lo merezcan. -->
+
+        <div id="DivTitulo">
+            <p id="Titulo">Seleccione la categoria de la pregunta: </p>
+
+            <select id="tipoPregunta" onchange="seleccionarPregunta()">
+                <option id="-"> - Elije una - </option>
+                <option id="0">Geografia</option>
+                <option id="1">Arte</option>
+                <option id="2">Espect&aacute;culo</option>
+                <option id="3">Historia</option>
+                <option id="4">Ciencia</option>
+                <option id="5">Deporte</option>
+            </select>
+        </div>
+
+        <div id="DivPregunta" style="display:none">
+            <p id="Pregunta"></p>
+
+            <input id="Respuesta" type="text" value="" placeholder="Escribre tu respuesta"/>
+
+            <button onclick="aceptarRespuesta()">Aceptar</button>
+
+        </div>
+    </body>
+</html>

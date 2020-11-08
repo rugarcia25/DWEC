@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Funciones anonimas</title>
+    </head>
+    <body>
+        <script>
+            //SINTAXIS
+            var producto = function (a,b) {return a * b;};
+            var resultado = producto(3,6);
+            alert(resultado);
+
+            //CONSTRUCTOR FUNCTION()
+            var miFuncion = new Function("a", "b", "return a*b;");
+            var resultado2 = miFuncion(5,7);
+            alert(resultado2);
+
+            //FUNCIONES ANONIMAS AUTOINVOCADAS
+            (function () {alert("Hola!");}());
+
+        </script>
+    </body>
+</html>

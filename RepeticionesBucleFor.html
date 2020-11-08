@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Repeticiones. Bucle FOR</title>
+    </head>
+    <body>
+        <script>
+            /* SINTAXIS:
+                for (<sentencia>;<sentencia2>;<sentencia3>){
+                    //Instrucciones que se repite
+                }
+                - SENTENCIA 1: Se ejecuta antes de que empiece el bloque de codigo a repetir
+                - SENTENCIA 2: Define la condición por la que el codigo se ejecuta
+                - SENTENCIA 3: Se ejecuta después de que acabe el bloque a repetir */
+                var i;
+                for(var i=0;i<5;i++){
+                    alert(i);
+                }
+
+                // VARIACIONES
+                // 1. Si omitimos la primera sentencia debemos haber inicializado la variable
+                // con anterioridad.
+                var j = 1;
+                for(;j<5;j++){
+                    alert("j = " + j);
+                }
+                // 2. Si omitimos la segunda sentencia, debemos introducir un break
+                var k;
+                for(k=1; ;k++){
+                    alert("k = " + k);
+                    if (k == 5){
+                        break;
+                    }
+                }
+                // 3. Si omitimos la terecera sentencia, debemos incrementar o decrementar
+                // el valor de la varialbe dentro del bucle
+                var l;
+                for (l=1; l<=5; ){
+                    alert("l = " + l);
+                    l++;
+                }
+                // 4. Podemos trabajar con dos o más valores dentro del bucle for
+                var m, n;
+                for (m=1,n=10; m<=10, n>=1;m++, n--){
+                    alert("m = " + m + " y la n = " + n);
+                }
+        </script>
+    </body>
+</html>

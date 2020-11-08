@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Funciones</title>
+    </head>
+    <body>
+        <script>
+            /* SINTAXIS DE UNA FUNCION
+                function nombre_funcion (<parámetros_separados_por_comas){...}
+            */
+
+            //FUNCION SIN PARÁMETROS
+            function saludo(){
+                alert("Hola!");
+            }
+
+            //Los paréntesis () invocan a la función
+            //var resultado_saludo = saludo();
+            //alert(resultado_saludo);
+            
+            //Devuelve la función guardada en la variable
+            //var resultado_saludo2 = saludo;
+            //alert(resultado_saludo2);
+
+            //FUNCION CON PARÁMETROS
+            function producto (a,b){
+                return a*b;
+            }
+            var resultado_producto = producto(3,4);
+            alert(resultado_producto); //Devuelve 12 (a*b)
+        </script>
+    </body>
+</html>
